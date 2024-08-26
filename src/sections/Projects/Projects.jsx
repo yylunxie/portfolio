@@ -1,5 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import chickenMonitor from "../../assets/chicken-monitor.png";
+import robotVacuum from "../../assets/robot-vacuum.png";
+import pineapple from "../../assets/pineapple-identification.png";
 import ProjectCard from "../../common/ProjectCard";
 function Projects() {
   return (
@@ -13,13 +15,13 @@ function Projects() {
           info=""
         />
         <ProjectCard
-          src={chickenMonitor}
+          src={robotVacuum}
           link="https://shorturl.at/GzFkS"
           name="Vacuum Robot"
           info=""
         />
         <ProjectCard
-          src={chickenMonitor}
+          src={pineapple}
           link="https://shorturl.at/bMAzO"
           name="Pineapple Growth Stage Identification"
           info=""
