@@ -2,10 +2,10 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-allen.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-import instagramLight from "../../assets/twitter-light.svg";
+import instagramLight from "../../assets/instagram-light.svg";
 import githubLight from "../../assets/github-light.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
-import instagramDark from "../../assets/twitter-dark.svg";
+import instagramDark from "../../assets/instagram-dark.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/cv.pdf";
@@ -35,6 +35,10 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
+        <h1 className={styles.tw}>
+          謝宇倫
+          <br />
+        </h1>
         <h1>
           YuLun <br />
           Hsieh

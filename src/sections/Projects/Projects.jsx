@@ -1,6 +1,5 @@
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
+import chickenMonitor from "../../assets/chicken-monitor.png";
 import ProjectCard from "../../common/ProjectCard";
 function Projects() {
   return (
@@ -8,19 +7,19 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={chickenMonitor}
           link="https://shorturl.at/4FRcs"
           name="Automatically Chicken Monitor System"
           info=""
         />
         <ProjectCard
-          src={freshBurger}
+          src={chickenMonitor}
           link="https://shorturl.at/GzFkS"
           name="Vacuum Robot"
           info=""
         />
         <ProjectCard
-          src={freshBurger}
+          src={chickenMonitor}
           link="https://shorturl.at/bMAzO"
           name="Pineapple Growth Stage Identification"
           info=""
