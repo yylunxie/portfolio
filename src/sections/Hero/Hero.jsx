@@ -1,7 +1,5 @@
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-allen.png";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg";
 import instagramLight from "../../assets/instagram-light.svg";
 import githubLight from "../../assets/github-light.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
@@ -9,12 +7,8 @@ import instagramDark from "../../assets/instagram-dark.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/cv.pdf";
-import { useTheme } from "../../common/ThemeContext";
 
-function Hero() {
-  const { theme, toggleTheme } = useTheme();
-
-  const themeIcon = theme === "light" ? sun : moon;
+function Hero({ theme, toggleTheme }) {
   const instagramIcon = theme === "light" ? instagramLight : instagramDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
@@ -26,12 +20,6 @@ function Hero() {
           className={styles.hero}
           src={heroImg}
           alt="Profile picture of YuLun Hsieh"
-        />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="color mode icon"
-          onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
