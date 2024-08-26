@@ -1,0 +1,126 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 20px 10%;
+  background-color: var(--background-color-navbar);
+  z-index: 9999;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  a {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 0.75rem;
+      right: 0.5rem;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40px;
+      cursor: pointer;
+    }
+    .menu:hover {
+      scale: 1.1;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      a::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--text-color);
+        transition: 0.3s;
+      }
+
+      a:hover::before {
+        width: 100%;
+      }
+
+      .colorMode {
+        position: relative;
+        right: 0;
+        width: 40px;
+        margin-left: 40px;
+      }
+
+      .colorMode:hover {
+        cursor: pointer;
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+@media (width < 800px) {
+  .container {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      position: absolute;
+      top: 0.75rem;
+      left: 0.5rem;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 0.25;
+      margin-top: 40px;
+
+      .menu {
+        display: flex;
+      }
+      .open {
+        display: flex;
+      }
+      div {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        a {
+          margin-top: 10px;
+        }
+        img {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
