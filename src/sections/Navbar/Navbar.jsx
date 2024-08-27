@@ -16,7 +16,7 @@ function Navbar({ theme, toggleTheme }) {
   return (
     <section id="navbar" className={styles.container}>
       <header className={styles.header}>
-        <a href="/" className={styles.logo}>
+        <a href="#hero" className={styles.logo}>
           Allen
         </a>
 
@@ -28,7 +28,7 @@ function Navbar({ theme, toggleTheme }) {
             onClick={() => setMenuOpen(!menuOpen)}
           />
           <div className={menuOpen ? styles.open : styles.close}>
-            <a href="#hero">Home</a>
+            <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
